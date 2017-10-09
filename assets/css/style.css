@@ -55,8 +55,9 @@ body{
   margin:0;
 }
 h2{
-  padding-top:50px;
+  padding-top:30px;
   text-align:center;
+  padding-bottom: 30px;
 }
 #Presentation{
   background-color: #EEEEC6;
@@ -77,10 +78,10 @@ h2{
 #Hobbies{
   background-color: #E0DFE7;
     min-height: 400px;
-    padding-left: auto;
-    padding-right: auto;
     opacity: 0.95;
     width: 100%;
+    border: 1px solid black;
+    text-align: center;
 }
 .date{
   color:Blue;
@@ -111,27 +112,22 @@ h2{
 /* Mis en forme de la partie Hobbies */
 #pompier, #athle, #hand{
   float:left;
-  width: 33%;
+  max-width: 33%;
+
 }
 #Hobbies a{
   text-decoration: none;
   color: black;
 }
-#pompier a{
-  float: bottom;
-}
-#athle a{
-  float: bottom;
-
-}
-#hand a{
-  float: bottom;
-}
 #Hobbies img{
   border-radius: 100px;
+  border: 1px solid black;
 }
 #afficherathle, #afficherhand, #afficherpompier{
   margin: auto;
+  border: 1px solid black;
+  height: 300px;
+
 }
 body{
   background-image: url("../img/gwenhadu.jpg");
