@@ -8,14 +8,16 @@
   <body>
     <header>
       <!--En tete du CV -->
-        <div id="profil"><img src="assets/img/profil.jpg" alt="photo de fabrice" title="fabrice burel" width="100vh"/></div>
+      <div id="entete">
+        <div id="profil"><img src="assets/img/profil.jpg" alt="photo de fabrice" title="fabrice burel" height="120vh"/></div>
         <div id="Titre"><h1>Fabrice BUREL</h1></div>
-        <div id="chapitre">
+        <nav id="chapitre">
           <div class="Presentation"><a href=#Presentation title="redirection vers la présentation">Presentation</a></div>
           <div class="Competences"><a href=#Competences title="redirection vers mes compétences">Competences</a></div>
-          <div class="Experiences"><a href=#Expériences title="redirection vers mes expériences">Experiences</a></div>
-          <div class="Hobbies"><a href=#hobbies title="redirection vers mes hobbies">Hobbies</a></div>
-        </div>
+          <div class="Experiences"><a href=#Experiences title="redirection vers mes expériences">Experiences</a></div>
+          <div class="Hobbies"><a href=#Hobbies title="redirection vers mes hobbies">Hobbies</a></div>
+        </nav>
+      </div>
     </header>
     <div id="Presentation">
       <h2>Présentation Rapide</h2>
@@ -23,7 +25,9 @@
       <p>Breton d'origine expatrié dans l'oise pour des raisons familiale, je souhaite intégrer une entreprise dynamique, qui me permettra d'évoluer en compétence</p>
       <p>Pour plus d'information sur mes expériences je vous conseille de vous diriger vers la section dédié ici</p>
       <p>Et concernant mes différentes passions c'est par là</p>
-      <h2 id="Competences">Mes compétences</h2>
+    </div>
+    <div id="Competences">
+      <h2>Mes compétences</h2>
       <h3>Compétence de développeur web en cours d'acquisition</h3>
       <ul>
         <li>HTML</li>
@@ -48,61 +52,81 @@
         <li>Autoformation</li>
       </ul>
     </div>
-    <h2 id="Expériences">Mes expériences</h2>
-    <p class="date">De 2016 à 2017</p>
-    <p>Monteur poseur Linky société SATCOMPTAGE (filiale SATELEC)</p>
-    <p>Pose des anciens compteurs et pose des compteurs intelligent Linky dans le respect des procédures ERDF<p>
+    <div id="Experiences">
+      <h2>Mes expériences</h2>
+      <p class="date">De 2016 à 2017</p>
+      <p class="poste">Monteur poseur Linky société SATCOMPTAGE (filiale SATELEC)</p>
+      <ul>
+        <li>Pose des anciens compteurs et pose des compteurs intelligent Linky dans le respect des procédures ENEDIS</li>
+        <li>Explications du fonctionnement du nouveau compteur au client</li>
+      </ul>
+      <p class="date">De 2013 à 2015</p>
+      <p class="poste">Technicien d'exploitation société SATELEC
+      <ul>
+        <li>Télémaintenance de 1600 Radars Automatiques Fixes</li>
+        <li>Support maintenance des techniciens d'intervention terrain dans le respect des procédures</li>
+        <li>Elaboration des procédures de maintenance à distance</li>
+        <li>Supervision des équipements après intervention</li>
+      </ul>
+      <p class="date">De 2010 à 2013</p>
+      <p class="poste">Société PROSERVIA</p>
+      <p class="poste">Technicien Service Client de production, réseaux Grands Comptes au sein d’Orange Business Services</p>
+      <ul>
+        <li>Pilotage des productions des réseaux grands comptes</li>
+        <li>Rédaction des consignes nécessaires à la gestion du réseau en vie de solution</li>
+        <li>Supervision et SAV des réseaux grands comptes</li>
+      </ul>
+      <p class="poste">Technicien Réseau helpdesk, Service DHD d'Orange</p>
+      <ul>
+        <li>Support réseaux N1 et N2 des productions des équipes d'intervention ou des clients</li>
+        <li>Finalisation des productions</li>
+        <li>activation de la supervision</li>
+        <li>Support N1 des migrations VOIP</li>
+      </ul>
+      <p class="date">De 2009 à 2010</p>
+      <p class="poste">Technicien Service client SAV, Orange Business Services à Nantes (44)</p>
+      <ul>
+        <li>Supervision des réseaux IP grand compte Orange</li>
+        <li>Gestion et pilotage des incidents</li>
+      </ul>
+    </div>
+    <div id="Hobbies">
+      <h2>Mes Hobbies</h2>
+      <h3>Sapeur-pompier volontaire depuis septembre 2005</h3>
+      <p>Grade de caporal-chef</p>
+      <ul>
+        <li>CS Gael(35) de 2005 à 2010</li>
+        <li>CS Betton(35) de 2010 à 2015</li>
+        <li>CS Noyon(60) de 2015 à aujourd'hui</li>
+      </ul>
+      <div id="afficher">
+        <div id="masquer">
+          <p><a href="#afficher" class="afficher"><img src="assets/img/steeple.jpg" title="franchissement de la barrière de steeple" alt="course de 3000m steeple" height="200vh"/>Course à pied</a><a href="#masquer" class="masquer"><img src="assets/img/steeple.jpg" title="franchissement de la barrière de steeple" alt="course de 3000m steeple" height="200vh"/>Course à pied</a></p>
+            <div class="info">
+            <h3>Pratique de la course à pied en compétition</h3>
+            <ul>
+              <li>record sur 10km: 35min58 (2005)</li>
+              <li>Record 3000m steeple: 10min29</li>
+              <li>Record sur 5km marche: 26min15 (2008)</li>
+              <li>Record 10000m marche : 57min31 (2011)</li>
+              <li>Record 400m haie: </li>
+            </ul>
+            <ul>
+              <li>Participation au trail nocturne de 16km de Lagny(60)</li>
+              <li>Participation au trail nocturne de 17km de la croix saint ouen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--  <p><img src="assets/img/hand.jpg" title="moi au hand" alt="tire de l'aile" height="200vh"/>handball</p>
+        <div id="afficher">
+          <div id="masquer">
+          <h3>Pratique du Handball en compétition club HBC Noyon depuis 2015</h3>
 
-    <p class="date">De 2013 à 2015</p>
-    <p>Technicien d'exploitation société SATELEC
-    <ul>
-      <li>Télémaintenance de 1600 Radars Automatiques Fixes</li>
-      <li>Support maintenance des techniciens d'intervention terrain dans le respect des procédures</li>
-      <li>Elaboration des procédures de maintenance à distance</li>
-      <li>Supervision des équipements après intervention</li>
-    </ul>
-    <p class="date">De 2010 à 2013</p>
-    <p class="entreprise">Société PROSERVIA</p>
-    <p>Technicien Service Client de production, réseaux Grands Comptes au sein d’Orange Business Services</p>
-    <ul>
-      <li>Pilotage des productions des réseaux grands comptes</li>
-      <li>Rédaction des consignes nécessaires à la gestion du réseau en vie de solution</li>
-      <li>Supervision et SAV des réseaux grands comptes</li>
-    </ul>
-    <p>Technicien Réseau helpdesk, Service DHD d'Orange</p>
-    <ul>
-      <li>Support réseaux N1 et N2 des productions des équipes d'intervention ou des clients</li>
-      <li>Finalisation des productions</li>
-      <li>activation de la supervision</li>
-      <li>Support N1 des migrations VOIP</li>
-    </ul>
-    <p class="date">De 2009 à 2010</p>
-    <p>Technicien Service client SAV, Orange Business Services à Nantes (44)</p>
-    <ul>
-      <li>Supervision des réseaux IP grand compte Orange</li>
-      <li>Gestion et pilotage des incidents</li>
-    </ul>
-    <h2 id="hobbies">Mes Hobbies</h2>
-    <h3>Sapeur-pompier volontaire depuis septembre 2005</h3>
-    <p>Grade de caporal-chef</p>
-    <ul>
-      <li>CS Gael(35) de 2005 à 2010</li>
-      <li>CS Betton(35) de 2010 à 2015</li>
-      <li>CS Noyon(60) de 2015 à aujourd'hui</li>
-    <h3>Pratique de la course à pied en compétition</h3>
-    <ul>
-      <li>record sur 10km: 35min58 (2005)</li>
-      <li>Record 3000m steeple: 10min29</li>
-      <li>Record sur 5km marche: 26min15 (2008)</li>
-      <li>Record 10000m marche : 57min31 (2011)</li>
-      <li>Record 400m haie: </li>
-    </ul>
-    <ul>
-      <li>Participation au trail nocturne de 16km de Lagny(60)</li>
-      <li>Participation au trail nocturne de 17km de la croix saint ouen</li>
-    </ul>
-    <h3>Pratique du Handball en compétition club HBC Noyon depuis 2015</h3>
-    <p>Niveau départemental excellence</p>
-    <p>Membre du conseil d'administration depuis 2016</p>
+          <p>Niveau départemental excellence</p>
+          <p>Membre du conseil d'administration depuis 2016</p>
+        </div>
+      </div> -->
+    </div>
   </body>
 </html>

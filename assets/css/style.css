@@ -1,50 +1,98 @@
-header{
+#entete{
   width: 100%;
-  height: 300px;
+  height: auto;
+  height: 150px;
   background-color: #81020B;
+  text-align: center;
 }
 #profil{
   text-align: left;
   float: left;
   margin-bottom: auto;
-  width: 50%;
+  width: 25%;
+  min-width: 300px;
 }
 #Titre{
-  text-align: center;
-  width: 75%;
+  margin-left: 42%;
+  position: relative;
+  width: 30%;
+  min-width: 300px;
 }
 
 #Titre h1{
-
   float: left;
   color: white;
 }
 #chapitre{
-  text-align: center;
   width: 100%;
   float: left;
-/*  border: 1px solid black; */
-
+  background-color: grey;
+  margin-top: 0;
+  max-height: 100px;
 }
 .Presentation,.Competences,.Experiences,.Hobbies{
+  width: 25%;
   float: left;
-  text-align: center;
-  margin: 1%;
-
+  margin: auto;
+  position: relative;
+  min-width: 200px;
 }
-
-
 .Presentation a,.Competences a,.Experiences a,.Hobbies a{
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
-#Presentation{
+p, h3{
   text-align: justify;
-  margin-left: 5%;
-  margin-right: 5%;
+  padding-left:5%;
+  padding-right:5%;
+}
+ul{
+  margin-left:5%;
+  margin-right:5%;
+  font-family:Impact;
+}
+body{
+  margin:0;
+}
+h2{
+  padding-top:50px;
+  text-align:center;
+}
+#Presentation{
+  background-color: #EEEEC6;
 }
 
-h2{
-  margin-top: 50px;
+#Experiences{
+  background-color: #FFF7EE;
+}
+#Competences{
+  background-color: #F0F8FF;
+}
+#Hobbies{
+  background-color: #E0DFE7;
+}
+.date{
+  color:Blue;
+  font-weight: bold;
+}
+.poste{
+  font-weight: bold;
+}
+/*code CSS qui permet de cacher les informations contenu dans l'image */
+.info {
+   display:none;
+   background: #ddd
+}
+#afficher:target .info {
+   display:block
+}
+.masquer {
+   display:none;
+}
+#afficher:target .masquer {
+   display:inline;
+}
+#afficher:target .afficher {
+   display:none;
 }
