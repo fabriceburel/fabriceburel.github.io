@@ -84,15 +84,15 @@ h2{
    display:none;
    background: #ddd
 }
-#afficher:target .info {
+#afficher:target .info, #afficherhand:target .info{
    display:block
 }
-.masquer {
+.masquer{
    display:none;
 }
-#afficher:target .masquer {
+#afficher:target .masquer, #afficherhand:target .masquer{
    display:inline;
 }
-#afficher:target .afficher {
+#afficher:target .afficher,  #afficherhand:target .afficher {
    display:none;
 }
