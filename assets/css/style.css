@@ -61,16 +61,23 @@ h2{
 }
 #Presentation{
   background-color: #EEEEC6;
+  opacity: 0.95;
 }
 
 #Experiences{
   background-color: #FFF7EE;
+  opacity: 0.95;
 }
 #Competences{
   background-color: #F0F8FF;
+  opacity: 0.95;
 }
 #Hobbies{
   background-color: #E0DFE7;
+    min-height: 400px;
+    padding-left: auto;
+    padding-right: auto;
+    opacity: 0.95;
 }
 .date{
   color:Blue;
@@ -82,17 +89,47 @@ h2{
 /*code CSS qui permet de cacher les informations contenu dans l'image */
 .info {
    display:none;
-   background: #ddd
+   background: #ddd;
+   float: left;
+   width: 60%;
 }
-#afficher:target .info, #afficherhand:target .info{
+#afficherathle:target .info, #afficherhand:target .info, #afficherpompier:target .info{
    display:block
 }
 .masquer{
    display:none;
 }
-#afficher:target .masquer, #afficherhand:target .masquer{
+#afficherathle:target .masquer, #afficherhand:target .masquer, #afficherpompier:target .masquer{
    display:inline;
 }
-#afficher:target .afficher,  #afficherhand:target .afficher {
+#afficherathle:target .afficher,  #afficherhand:target .afficher,  #afficherpompier:target .afficher {
    display:none;
+}
+#pompier, #athle, #hand{
+  float:left;
+  width: 33%;
+}
+#Hobbies a{
+  text-decoration: none;
+  color: black;
+}
+#pompier a{
+  float: bottom;
+}
+#athle a{
+  float: bottom;
+
+}
+#hand a{
+  float: bottom;
+}
+#Hobbies img{
+  border-radius: 100px;
+}
+#afficherathle, #afficherhand, #afficherpompier{
+  margin: auto;
+}
+body{
+  background-image: url("../img/gwenhadu.jpg");
+  transform:rotate(90);
 }
