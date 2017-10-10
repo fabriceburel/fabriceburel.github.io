@@ -4,6 +4,7 @@
   min-height: 150px;
   background-color: #81020B;
   text-align: center;
+  background: url("../img/saintmalo.jpg") no-repeat center;
 }
 #profil{
   text-align: left;
@@ -60,18 +61,18 @@ h2{
   padding-bottom: 30px;
 }
 #Presentation{
-  background-color: #EEEEC6;
+  background-color: #E0DFE7;
   opacity: 0.95;
   width: 100%;
 }
 
 #Experiences{
-  background-color: #FFF7EE;
+  background-color: #E0DFE7;
   opacity: 0.95;
   width: 100%;
 }
 #Competences{
-  background-color: #F0F8FF;
+  background-color: #E0DFE7;
   opacity: 0.95;
   width: 100%;
 }
@@ -113,27 +114,35 @@ h2{
 #pompier, #athle, #hand{
   float:left;
   max-width: 33%;
-
 }
 #Hobbies a{
   text-decoration: none;
   color: black;
+  text-align: center;
 }
 #Hobbies img{
   border-radius: 100px;
   border: 1px solid black;
 }
-#afficherathle, #afficherhand, #afficherpompier{
+#afficherathle, #afficherhand, #afficherpompier, #masquerathle, #masquerhand, #masquerpompier{
   margin: auto;
-  border: 1px solid black;
-  height: 300px;
-
+  min-height: 300px;
+  min-width: 400px;
 }
+ #masquerathle, #masquerhand, #masquerpompier{
+   margin: auto;
+   border: 1px solid black;
+   min-height: 300px;
+   min-width: 400px;
+ }
+/*definition de l'image de fond, centrer sans répétition et fixe */
 body{
-  background-image: url("../img/gwenhadu.jpg");
-  transform:rotate(90);
+  background: white url("../img/triskel.jpg") fixed no-repeat center;
 }
 /*permet de supprimer l'espace entre 2 div */
 div{
   display: inline-block;
+}
+#text{
+  margin: 0;
 }
