@@ -1,35 +1,129 @@
+html{
+  background: #2A2A2A;
+  font: 1.1em sans-serif;
+}
+
 #entete{
   width: 100%;
-  height: auto;
-  min-height: 150px;
   background-color: #81020B;
-  text-align: center;
   background: url("../img/saintmalo.jpg") no-repeat center;
+  background-size:200vh;
+  background-position: bottom;
 }
 #profil{
-  text-align: left;
-  float: left;
-  width: 25%;
-  min-width: 300px;
-}
-#Titre{
-  width: 20%;
-  text-align: center;
-}
-
-#Titre h1{
-  float: left;
-  color: white;
-
-  vertical-align: middle;
-}
-#chapitre{
   width: 100%;
-  float: left;
-  background-color: grey;
-  min-height: 50px;
-  vertical-align: middle;
+  min-width: 200px;
+  display: contents;
+
 }
+#image{
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  float: left;
+  min-height:  100px;
+
+}
+
+#profil h1{
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  width: 90%;
+  float: left;
+}
+/*baniere menu */
+ul#chapitre{
+  /*Un menu horizontal*/
+    display: table;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    /*Création d’un dégradé linéaire*/
+    background: linear-gradient(deepskyblue, dodgerblue);
+    /*Compatibilité du dégradé*/
+    background: -webkit-linear-gradient(deepskyblue, dodgerblue);
+    background:    -moz-linear-gradient(deepskyblue, dodgerblue);
+    background:     -ms-linear-gradient(deepskyblue, dodgerblue);
+    background:      -o-linear-gradient(deepskyblue, dodgerblue);
+    background:         linear-gradient(deepskyblue, dodgerblue);
+    /*Dégradation gracieuse du dégradé*/
+    background: dodgerblue;
+    /*Ajout de coins arrondis et d’ombres*/
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);
+}
+ul#chapitre li{
+  /*Un menu horizontal*/
+    display: table-cell;
+}
+ul#chapitre li a{
+    /*Style des liens*/
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, .7);
+    text-decoration: none;
+    padding: 8px 8px 17px 8px;
+    /*Effet de texte incrusté */
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+    /*Effet 3D sur le menu*/
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
+                0 -1px 0 hsl(210, 100%, 32%) inset,
+                0 -2px 0 hsl(210, 100%, 38%) inset,
+                0 -3px 0 hsl(210, 100%, 44%) inset,
+                0 -4px 0 hsl(210, 100%, 50%) inset,
+                0 -5px 0 hsl(210, 100%, 60%) inset;
+    /*ajout d'une lumière */
+    position: relative;
+}
+/*Peaufinage de l’effet (coins arrondis) */
+ul#chapitre li:first-child a{
+    border-radius: 3px 0 0 3px;
+}
+ul#chapitre li:last-child a{
+    border-radius: 0 3px 3px 0;
+}
+/*Différents états (:hover, :focus, :active)
+Pour améliorer l’expérience utilisateur et ainsi aider l’internaute dans sa navigation, */
+ul#chapitre li a:hover,
+ul#chapitre li a:focus{
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
+                0 -1px 0 hsl(210, 100%, 42%) inset,
+                0 -2px 0 hsl(210, 100%, 48%) inset,
+                0 -3px 0 hsl(210, 100%, 54%) inset,
+                0 -4px 0 hsl(210, 100%, 60%) inset,
+                0 -5px 0 hsl(210, 100%, 70%) inset;
+                /*modification des marges interne */
+                padding: 8px 25px 17px 25px;
+}
+ul#chapitre li a:active{
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
+    box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
+}
+/*ajout d'une lumière */
+ul#chapitre li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .5);
+}
+/*allume la lumière au passage */
+ul#chapitre li a:hover::before,
+ul#chapitre li a:focus::before{
+    background: white;
+    box-shadow: 0 0 2px white,
+                0 -1px 0 rgba(0, 0, 0, .4);
+}
+/*}
 .Presentation,.Competences,.Experiences,.Hobbies{
   width: 25%;
   float: left;
@@ -42,7 +136,8 @@
   color: white;
   font-weight: bold;
 }
-p, h3{
+*/
+p{
   text-align: justify;
   padding-left:5%;
   padding-right:5%;
@@ -54,8 +149,9 @@ ul{
 }
 body{
   margin:0;
+  padding: 0;
 }
-h2{
+h2, h3, h4{
   padding-top:30px;
   text-align:center;
   padding-bottom: 30px;
@@ -81,7 +177,6 @@ h2{
     min-height: 400px;
     opacity: 0.95;
     width: 100%;
-    border: 1px solid black;
     text-align: center;
 }
 .date{
@@ -120,9 +215,15 @@ h2{
   color: black;
   text-align: center;
 }
+#Hobbies p{
+  text-align: center;
+}
 #Hobbies img{
   border-radius: 100px;
   border: 1px solid black;
+}
+.description{
+  margin-top: 50px;
 }
 #afficherathle, #afficherhand, #afficherpompier, #masquerathle, #masquerhand, #masquerpompier{
   margin: auto;
@@ -132,12 +233,14 @@ h2{
  #masquerathle, #masquerhand, #masquerpompier{
    margin: auto;
    border: 1px solid black;
-   min-height: 300px;
+   min-height: 400px;
    min-width: 400px;
+   max-width: 400px;
  }
 /*definition de l'image de fond, centrer sans répétition et fixe */
-body{
+#content{
   background: white url("../img/triskel.jpg") fixed no-repeat center;
+  background-size: 50%;
 }
 /*permet de supprimer l'espace entre 2 div */
 div{
