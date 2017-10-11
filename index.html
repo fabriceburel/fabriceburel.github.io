@@ -12,17 +12,18 @@
       <!--En tete du CV -->
       <div id="entete">
         <div id="profil"><img id="image" src="assets/img/profil.jpg" alt="photo de fabrice" title="fabrice burel" width="200vh"/><h1>Fabrice BUREL</h1></div>
-        <ul id="nav">
-          <li><h5><a href="#">MENU</a></h5>
+      </div>
+      <ul id="nav">
+          <li><h5><a id="menu" href="#"><i class="fa fa-bars" aria-hidden="true"></i> MENU</a></h5>
         <ul id="chapitre">
-          <li><a href=#Presentation title="redirection vers la présentation">Presentation</a>
-          <li><a href=#Competences title="redirection vers mes compétences">Competences</a></li>
-          <li><a href=#Experiences title="redirection vers mes expériences">Experiences</a></li>
+          <li><a href=#Presentation title="redirection vers la présentation">Présentation</a>
+          <li><a href=#Competences title="redirection vers mes compétences">Compétences</a></li>
+          <li><a href=#Experiences title="redirection vers mes expériences">Expériences</a></li>
           <li><a href=#Hobbies title="redirection vers mes hobbies">Hobbies</a></li>
         </ul>
         </li>
       </ul>
-      </div>
+
     </header>
     <div id="content">
     <div id="Presentation">
@@ -100,7 +101,12 @@
       <h2><i class="fa fa-futbol-o fa-2x" aria-hidden="true"></i>-Mes Hobbies</h2>
       <div id="afficherpompier">
         <div id="masquerpompier">
-          <h4 id="pompier"><a href="#afficherpompier" class="afficher"><img src="assets/img/FPT.jpg" title="FPT du sdis de l'oise" alt="FPT du sdis de l'oise" height="200vh"/><span class="description"> Sapeur Pompier Volontaire</span></a><a href="#masquerpompier" class="masquer"><img src="assets/img/FPT.jpg" title="FPT du sdis de l'oise" alt="FPT du sdis de l'oise" height="200vh"/><span class="description"> Sapeur Pompier Volontaire</span></a></h4>
+          <figure id="pompier">
+          <a href="#afficherpompier" class="afficher"><img src="assets/img/FPT.jpg" title="FPT du sdis de l'oise" alt="FPT du sdis de l'oise" height="200vh"/>
+            <figcaption class="description"> Sapeur Pompier Volontaire</figcaption></a>
+              <a href="#masquerpompier" class="masquer"><img src="assets/img/FPT.jpg" title="FPT du sdis de l'oise" alt="FPT du sdis de l'oise" height="200vh"/>
+                <figcaption class="description"> Sapeur Pompier Volontaire</figcation></a>
+        </figure>
           <div class="info">
             <h3>Sapeur-pompier volontaire depuis septembre 2005</h3>
             <p>Grade de caporal-chef</p>
@@ -114,7 +120,12 @@
       </div>
       <div id="afficherathle">
         <div id="masquerathle">
-          <h4 id="athle"><a href="#afficherathle" class="afficher"><img src="assets/img/steeple.jpg" title="franchissement de la barrière de steeple" alt="course de 3000m steeple" height="200vh"/>Course à pied</a><a href="#masquerathle" class="masquer"><img src="assets/img/steeple.jpg" title="franchissement de la barrière de steeple" alt="course de 3000m steeple" height="200vh"/>Course à pied</a></h4>
+          <figure id="athle">
+            <a href="#afficherathle" class="afficher"><img src="assets/img/steeple.jpg" title="franchissement de la barrière de steeple" alt="course de 3000m steeple" height="200vh"/>
+            <figcaption class="description">Course à pied</figcaption></a>
+            <a href="#masquerathle" class="masquer"><img src="assets/img/steeple.jpg" title="franchissement de la barrière de steeple" alt="course de 3000m steeple" height="200vh"/>
+            <figcaption class="description">Course à pied</figcaption></a>
+          </figure>
             <div class="info">
               <h3>Pratique de la course à pied en compétition</h3>
               <ul>
@@ -133,7 +144,11 @@
         </div>
         <div id="afficherhand">
           <div id="masquerhand">
-            <h4 id="hand"><a href="#afficherhand" class="afficher"><img src="assets/img/hand.jpg" title="moi au hand" alt="tire de l'aile" height="200vh"/>handball</a><a href="#masquerhand" class="masquer"><img src="assets/img/hand.jpg" title="moi au hand" alt="tire de l'aile" height="200vh"/>handball</a></h4>
+            <figure id="hand">
+              <a href="#afficherhand" class="afficher"><img src="assets/img/hand.jpg" title="moi au hand" alt="tire de l'aile" height="200vh"/>
+                <figcaption class="description">handball</figcaption></a>
+              <a href="#masquerhand" class="masquer"><img src="assets/img/hand.jpg" title="moi au hand" alt="tire de l'aile" height="200vh"/><figcaption class="description">handball</figcaption></a>
+            </figure>
             <div class="info">
               <h3>Pratique du Handball en compétition club HBC Noyon depuis 2015</h3>
               <p>Niveau départemental excellence</p>
