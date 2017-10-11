@@ -377,14 +377,7 @@ h5{
        i{
          margin-right: 10px;
        }
-}
-
-
-
-
-
-
-
-
-
+       #content{
+         background-size: 100%;
+       }
 }
