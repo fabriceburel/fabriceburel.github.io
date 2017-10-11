@@ -322,7 +322,7 @@ h5{
         list-style : none; /* on supprime le style par défaut de la liste */
        line-height : 20px; /* on définit une hauteur pour chaque élément */
         text-align : center; /* on centre le texte qui se trouve dans la liste */
-        width: 70%; /* définit la largeure d'affichage du menu */
+        width: 30%; /* définit la largeure d'affichage du menu */
         background: yellow;
       }
       #nav /* Ensemble du menu */
