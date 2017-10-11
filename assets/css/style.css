@@ -257,7 +257,10 @@ h5{
       margin: 0;
       background: deepskyblue;
       height: 40px;
-
+      width: 100%;
+    }
+    li#menu{
+      width: 100%;
     }
     #entete h1{
       width: 100%;
@@ -286,7 +289,7 @@ h5{
     progress{
       margin: 1%;
     }
-    ul#chapitre li a{
+    ul#chapitre li a{ /*vérifié */
       background: deepskyblue;
       padding: 0;
       height: 30px;
@@ -295,20 +298,22 @@ h5{
       color: black;
       box-shadow: none;
       border-top: 1px solid dodgerblue;
+      width: 100%;
     }
     ul#chapitre li a:hover,
     ul#chapitre li a:focus{
-        background: dodgerblue;
+      background: dodgerblue; /*vérifié */
         box-shadow: none;
         padding: 0;
         height: 30px;
         padding-top: 5px;
         color: black;
+        width: 100%; /*ne change rien */
 
       }
-      ul#chapitre li a:focus::before{
-          background: white;
+      ul#chapitre li a:focus::before{ /*vérifié */
           box-shadow: none;
+          width: 100%;
         }
     #nav, #nav ul /* Liste */
       {
@@ -317,8 +322,8 @@ h5{
         list-style : none; /* on supprime le style par défaut de la liste */
        line-height : 20px; /* on définit une hauteur pour chaque élément */
         text-align : center; /* on centre le texte qui se trouve dans la liste */
-        height: 30px;
-
+        width: 70%; /* définit la largeure d'affichage du menu */
+        background: yellow;
       }
       #nav /* Ensemble du menu */
       {
@@ -341,13 +346,13 @@ h5{
       #nav li
       {
       float: left;
-      width: 100%;
       height: 30px;
+      width: 100%; /*définit la taille de tout les li */
       }
+
       #nav li ul
       {
       	position: absolute;
-      	width: 100%;
       	left: -999em;
         z-index: 1;
         height: 30px;
@@ -376,6 +381,7 @@ h5{
        }
        i{
          margin-right: 10px;
+         margin-left: 20px;
        }
        #content{
          background-size: 100%;
