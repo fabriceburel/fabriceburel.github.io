@@ -256,6 +256,7 @@ h5{
       display:block;
       margin: 0;
       padding: 0;
+      background: deepskyblue;
     }
     #entete h1{
       width: 100%;
@@ -285,20 +286,24 @@ h5{
       margin: 1%;
     }
     ul#chapitre li a{
+      background: deepskyblue;
       padding: 0;
       height: 30px;
       padding-top: 5px;
       font-size: 15px;
       color: black;
+      box-shadow: none;
+      border-top: 1px solid dodgerblue;
     }
     ul#chapitre li a:hover,
     ul#chapitre li a:focus{
-        background: linear-gradient(deepskyblue, dodgerblue);
+        background: dodgerblue;
         box-shadow: none;
         padding: 0;
         height: 30px;
         padding-top: 5px;
         color: black;
+
       }
       ul#chapitre li a:focus::before{
           background: white;
@@ -325,7 +330,7 @@ h5{
     #nav a /* Contenu des listes */
       {
         display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
-        padding-top : 5px; /* aucune marge intérieure */
+        padding-top : 0px; /* aucune marge intérieure */
         background : linear-gradient(deepskyblue, dodgerblue); /* couleur de fond */
         color : black; /* couleur du texte */
         text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
