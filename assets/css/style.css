@@ -249,7 +249,7 @@ h5{
   margin: 0;
 }
 /*ajout d'un media queries */
-@media all and (max-width: 900px)
+@media all and (max-device-width: 480px)
 
 {
   #menu{
