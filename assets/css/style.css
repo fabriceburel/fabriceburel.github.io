@@ -249,14 +249,15 @@ h5{
   margin: 0;
 }
 /*ajout d'un media queries */
-@media all and (max-width: 1400px)
+@media all and (max-width: 900px)
 
 {
   #menu{
-      display:block;
+      display:flex;
       margin: 0;
-      padding: 0;
       background: deepskyblue;
+      height: 40px;
+
     }
     #entete h1{
       width: 100%;
@@ -360,16 +361,21 @@ h5{
 	       left: auto;
          height: 30px;
        }
-       /*enleve la lumière */
-       ul#nav h5{
+
+      ul#nav h5{
          margin: 0;
          font-size: 20px;
          font-weight: bold;
          vertical-align: middle;
          height: 30px;
+         text-align: center;
        }
+       /*enleve la lumière */
        ul#chapitre li a::before{
            display: none;
+       }
+       i{
+         margin-right: 10px;
        }
 }
 
