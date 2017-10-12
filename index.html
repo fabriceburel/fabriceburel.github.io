@@ -3,14 +3,25 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Fabrice BUREL</title>
   </head>
   <body>
     <header>
+    <!--  <div id="bloc image"><img class="triskel" src="assets/img/triskel.png" alt="triskel"/></div> -->
       <!--En tete du CV -->
       <div id="entete">
-        <div id="profil"><img id="image" src="assets/img/profil.jpg" alt="photo de fabrice" title="fabrice burel" width="200vh"/><h1>Fabrice BUREL</h1></div>
+        <div class="container-fluid text-left">
+          <div class="row">
+            <div class="col-lg-5 text-left">
+              <img id="image" src="assets/img/profil.jpg" alt="photo de fabrice" title="fabrice burel" width="150vh"/>
+            </div>
+            <div class="col-lg-7 text-center">
+              <h1>Fabrice BUREL</h1>
+          </div>
+          </div>
+        </div>
       </div>
       <ul id="nav">
           <li><h5 id="menu"><i class="fa fa-bars" aria-hidden="true"></i> MENU</h5>
@@ -22,7 +33,6 @@
         </ul>
         </li>
       </ul>
-
     </header>
     <div id="content">
     <div id="Presentation">
@@ -35,28 +45,34 @@
     <div id="Competences">
       <h2><i class="fa fa-cog fa-2x" aria-hidden="true"></i>-Mes compétences</h2>
       <h3><i class="fa fa-desktop" aria-hidden="true"></i>-Compétence de développeur web en cours d'acquisition</h3>
-      <ul>
-        <li>HTML <progress value="25" max="100">HTML</progress>25%</li>
-        <li>CSS <progress value="30" max="100">HTML</progress>30%</li>
-        <li>PHP <progress value="10" max="100">HTML</progress>10%</li>
-        <li>Java <progress value="5" max="100">HTML</progress>5%</li>
-        <li>git <progress value="50" max="100">HTML</progress>50%</li>
-        <li>Ligne de commande linux <progress value="30" max="100">HTML</progress>30%</li>
-      </ul>
+      <div class="container-fluid">
+        <ul class="row ">
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> HTML</div><div class="col-lg-6"><progress value="50" max="100">50%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> CSS</div><div class="col-lg-6"><progress value="40" max="100">40%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> PHP</div><div class="col-lg-6"><progress value="10" max="100">10%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> JAVA</div><div class="col-lg-6"><progress value="10" max="100">10%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> GITHUB</div><div class="col-lg-6"><progress value="75" max="100">75%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> LIGNE DE COMMANDE LINUX</div><div class="col-lg-6"><progress value="25" max="100">40%</progress></div></li>
+          </ul>
+      </div>
       <h3>Compétence réseaux informatique</h3>
-      <ul>
-        <li>TCP/IP <progress value="30" max="100">HTML</progress>30%</li>
-        <li>Configuration d'équipement réseaux <progress value="30" max="100">HTML</progress>30%</li>
-        <li>Gestion de serveur <progress value="30" max="100">HTML</progress>30%</li>
-        <li>maitrise de la couche OSI <progress value="30" max="100">HTML</progress>30%</li>
-      </ul>
+      <div class="container-fluid">
+        <ul class="row">
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> TCP/IP</div><div class="col-lg-6"><progress value="30" max="100">30%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> CONFIGUIRATION D'EQUIPEMENT RESEAUX</div><div class="col-lg-6"><progress value="30" max="100">30%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> GESTION DE SERVEUR</div><div class="col-lg-6"><progress value="30" max="100">30%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> MAITRISE DE LA COUCHE OSI</div><div class="col-lg-6"><progress value="30" max="100">30%</progress></div></li>
+          </ul>
+      </div>
       <h3>Compétence informatique et général</h3>
-      <ul>
-        <li>Veille technologique <progress value="40" max="100">HTML</progress>40%</li>
-        <li>Maintenance de PC <progress value="50" max="100">HTML</progress>50%</li>
-        <li>Travail d'équipe <progress value="70" max="100">HTML</progress>70%</li>
-        <li>Autoformation <progress value="40" max="100">HTML</progress>40%</li>
-      </ul>
+      <div class="container-fluid">
+        <ul class="row">
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> VEILLE TECHNOLOGIQUE</div><div class="col-lg-6"><progress value="30" max="100">30%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> MAINTENANCE DE PC</div><div class="col-lg-6"><progress value="30" max="100">30%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> TRAVAIL D'EQUIPE</div><div class="col-lg-6"><progress value="30" max="100">30%</progress></div></li>
+              <li class="col-lg-6 row justify-content-center text-center"><div class="col-lg-4 justify-content-left"> AUTOFORMATION</div><div class="col-lg-6"><progress value="30" max="100">30%</progress></div></li>
+          </ul>
+      </div>
     </div>
     <div id="Experiences">
       <h2>Mes expériences</h2>
