@@ -1,11 +1,27 @@
 html{
-
-
   z-index: 1;
 }
 /*definition de l'image de fond, centrer sans répétition et fixe */
+ul, li{
+  margin: 0;
+}
+/*
+.row h1{
+  display: flex;
+  flex-direction: row;
+}
+.row h1 > [class^="col-"],
+.row h1> [class*=" col-"] {
+  display: flex;
+  align-items: center;
+}*/
+p, ul{
+  padding: 5px;
+}
+.image{
+  padding:0;
+}
 #content{
-
   background-image: url(../img/triskel.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -13,38 +29,16 @@ html{
   background-size: 50%;
   background-position: center;
 }
-#blocimage{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-/*img.triskel{
-  opacity: 0.4;
-  z-index:0;
-  background-attachment: fixed;
-  height: 100%;
-  margin: 0;
-} */
 /*mise en forme de l'entete: image de profil, image du header, Titre de la page */
 #entete{
-  width: 100%;
   background-color: #81020B;
   background: url("../img/carnac.jpg") no-repeat center;
-  background-size:200vh;
-  background-position: bottom;
-  display: flex;
+  background-size: 2000px;
+  background-position:bottom;
 }
-.container-fluid{
+
+.container-fluid img{
   padding: 0;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.row > [class^="col-"],
-.row > [class*=" col-"] {
-  display: flex;
-  align-items: center;
 }
 /*permet de supprimer la ligne menu pour un affichage normal */
 #menu{
@@ -178,6 +172,7 @@ h2, h3, h4{
   padding-top:30px;
   text-align:center;
   padding-bottom: 30px;
+  margin: 0;
 }
 #Presentation, #Competences, #Experiences{
   background-color: #E0DFE7;
@@ -186,7 +181,7 @@ h2, h3, h4{
   font-weight: bold;
 }
 #Hobbies{
-
+    padding-bottom: 200px;
     min-height: 400px;
     background-color: #E0DFE7;
     opacity: 0.88;
@@ -204,12 +199,11 @@ h2, h3, h4{
 /*code CSS qui permet de cacher les informations contenu dans l'image */
 .info {
    display:none;
-   background: #ddd;
-   float: left;
    width: 60%;
 }
 #afficherathle:target .info, #afficherhand:target .info, #afficherpompier:target .info{
-   display:block
+   display:block;
+   text-align: center;
 }
 .masquer{
    display:none;
@@ -222,7 +216,6 @@ h2, h3, h4{
 }
 /* Mis en forme de la partie Hobbies */
 #pompier, #athle, #hand{
-  float:left;
   width: 100%;
 }
 #Hobbies a{
@@ -232,9 +225,6 @@ h2, h3, h4{
 }
 #Hobbies img:hover{
   opacity: 0.7;
-}
-#Hobbies p{
-  text-align: center;
 }
 #Hobbies img{
   border-radius: 100px;
@@ -251,28 +241,19 @@ figcaption{
   font-weight: bold;
   text-decoration: underline;
 }
-#afficherathle, #afficherhand, #masquerathle, #masquerhand,{
-  margin: auto;
+#afficherathle, #afficherhand, #afficherpompier, #masquerathle, #masquerhand, #masquerpompier{
   min-height: 400px;
   min-width: 400px;
+
 }
- #masquerathle, #masquerhand, #masquerpompier{
-   margin: auto;
-   border: 1px solid black;
-   min-height: 400px;
-   min-width: 400px;
-   max-width: 400px;
- }
+#afficherathle, #afficherhand, #afficherpompier{
+  border: 1px solid black;
+}
 /*permet de supprimer l'espace entre 2 div */
-div{
-  display: inline-block;
-}
-#text{
+h1,h2,h3,h4,h5,p,progress{
   margin: 0;
 }
-h5{
-  margin: 0;
-}
+
 /*modification des progess bar uniquement pour mozilla */
 progress{
   width: 200px;
@@ -290,13 +271,55 @@ progress{
  color: red;
  font-weight: bold;
 }
+/*mise en forme du footer */
+#footer a{
+  text-decoration: none;
+  color: black;
+}
+#footer a:hover{
+  color: blue
+}
+#footer i{
+  font-size: 30px;
+}
+#footer p{
+  font-size: 20px;
+  color:black;
+  font-weight: bold;
+}
+#footer{
+  background: linear-gradient(deepskyblue, dodgerblue);
+  /*Compatibilité du dégradé*/
+  background: -webkit-linear-gradient(deepskyblue, dodgerblue);
+  background:    -moz-linear-gradient(deepskyblue, dodgerblue);
+  background:     -ms-linear-gradient(deepskyblue, dodgerblue);
+  background:      -o-linear-gradient(deepskyblue, dodgerblue);
+  background:         linear-gradient(deepskyblue, dodgerblue);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.fa-github{
+  color:violet;
+}
+.fa-linkedin{
+  color:blue;
+}
+
 /*ajout d'un media queries spécifique au télphone*/
 @media all and (max-device-width: 480px)
 {
   .col-sm{
     text-align: center;
   }
-  #menu{
+  #footer{
+    position: relative;
+  }
+  #Hobbies{
+    padding-bottom: 10px;
+  }
+#menu{
     display:flex;
       margin: 0;
       background: deepskyblue;
@@ -323,6 +346,7 @@ progress{
       background: url("../img/saintmalo.jpg") no-repeat center;
       background-size:120%;
       width: 100%;
+      padding: 0;
     }
      #image{
       width: 50%;
@@ -334,7 +358,7 @@ progress{
       margin: 1%;
     }
     ul#chapitre li a{ /*vérifié */
-      background: deepskyblue;
+     background: deepskyblue;
       padding: 0;
       height: 30px;
       padding-top: 5px;
@@ -347,34 +371,34 @@ progress{
     ul#chapitre li a:hover,
     ul#chapitre li a:focus{
       background: dodgerblue; /*vérifié */
-        box-shadow: none;
+       box-shadow: none;
         padding: 0;
         height: 30px;
         padding-top: 5px;
         color: black;
         width: 100%; /*ne change rien */
 
-      }
+     }
     ul#chapitre li a:focus::before{ /*vérifié */
           box-shadow: none;
           width: 100%;
         }
     #nav, #nav ul /* Liste */
-      {
+   {
         padding : 0; /* pas de marge intérieure */
         margin : 0; /* ni extérieure */
-        list-style : none; /* on supprime le style par défaut de la liste */
-       line-height : 20px; /* on définit une hauteur pour chaque élément */
-        text-align : center; /* on centre le texte qui se trouve dans la liste */
-        width: 30%; /* définit la largeure d'affichage du menu */
-        background: yellow;
+     list-style : none; /* on supprime le style par défaut de la liste */
+   line-height : 20px; /* on définit une hauteur pour chaque élément */
+   text-align : center; /* on centre le texte qui se trouve dans la liste */
+     width: 30%; /* définit la largeure d'affichage du menu */
+       background: yellow;
       }
     #nav /* Ensemble du menu */
       {
        font-weight : bold; /* on met le texte en gras */
-       font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
-       font-size : 12px; /* hauteur du texte : 12 pixels */
-       width: 100%;
+   font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+    font-size : 12px; /* hauteur du texte : 12 pixels */
+     width: 100%;
        height: 30px;
       }
 
@@ -383,7 +407,7 @@ progress{
       float: left;
       height: 30px;
       width: 100%; /*définit la taille de tout les li */
-      }
+     }
 
       #nav li ul
       {
@@ -409,7 +433,7 @@ progress{
          text-align: center;
        }
        /*enleve la lumière */
-       ul#chapitre li a::before{
+   ul#chapitre li a::before{
            display: none;
        }
        i{
