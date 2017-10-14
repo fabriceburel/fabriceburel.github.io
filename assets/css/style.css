@@ -236,24 +236,21 @@ figcaption{
 h1,h2,h3,h4,h5,p,progress{
   margin: 0;
 }
-
-/*modification des progess bar uniquement pour mozilla */
-progress{
-  width: 200px;
+/*modification des progess bar code trouver sur le site http://bootstrapdesigntools.com/tools/bootstrap-progress-bar-designer/*/
+.progress-bar-stripped{
+  background-color: black;
+}
+.progress-bar-stripped{
+  width: 100px;
   height: 20px;
   background: black;
   border: 1px solid rgba(0,0,0,.5);
   border-radius: 15px;
-  box-shadow: 0 1px 0 rgba(255,255,255,.2);
 }
- progress::-moz-progress-bar {
-    background-color: white;
-    border-radius: 15px;
+.Competences p{
+  text-align:center;
 }
-.progressvalue{
- color: red;
- font-weight: bold;
-}
+
 /*mise en forme du footer */
 #footer a{
   text-decoration: none;
