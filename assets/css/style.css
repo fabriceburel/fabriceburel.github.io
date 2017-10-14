@@ -18,6 +18,9 @@ ul, li{
 p, ul{
   padding: 5px;
 }
+body{
+  color:black;
+}
 .image{
   padding:0;
 }
@@ -36,7 +39,6 @@ p, ul{
   background-size: 2000px;
   background-position:bottom;
 }
-
 .container-fluid img{
   padding: 0;
 }
@@ -67,22 +69,9 @@ ul#chapitre{
     width: 100%;
     margin:0;
     padding: 0;
-    /*Création d’un dégradé linéaire*/
-    background: linear-gradient(deepskyblue, dodgerblue);
-    /*Compatibilité du dégradé*/
-    background: -webkit-linear-gradient(deepskyblue, dodgerblue);
-    background:    -moz-linear-gradient(deepskyblue, dodgerblue);
-    background:     -ms-linear-gradient(deepskyblue, dodgerblue);
-    background:      -o-linear-gradient(deepskyblue, dodgerblue);
-    background:         linear-gradient(deepskyblue, dodgerblue);
-    /*Dégradation gracieuse du dégradé*/
-    background: dodgerblue;
+    background: linear-gradient(black, #E0DFE7);
     /*Ajout de coins arrondis et d’ombres*/
     border-radius: 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
-                0 3px 5px rgba(0, 0, 0, .2),
-                0 5px 10px rgba(0, 0, 0, .2),
-                0 20px 20px rgba(0, 0, 0, .15);
 }
 ul#chapitre li{
   /*Un menu horizontal*/
@@ -94,16 +83,9 @@ ul#chapitre li a{
     text-align: center;
     color: rgba(0, 0, 0, .7);
     text-decoration: none;
+    font-weight: bold;
+    border-bottom: white;
     padding: 8px 8px 17px 8px;
-    /*Effet de texte incrusté */
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
-    /*Effet 3D sur le menu*/
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
-                0 -1px 0 hsl(210, 100%, 32%) inset,
-                0 -2px 0 hsl(210, 100%, 38%) inset,
-                0 -3px 0 hsl(210, 100%, 44%) inset,
-                0 -4px 0 hsl(210, 100%, 50%) inset,
-                0 -5px 0 hsl(210, 100%, 60%) inset;
     /*ajout d'une lumière */
     position: relative;
 }
@@ -119,7 +101,7 @@ Pour améliorer l’expérience utilisateur et ainsi aider l’internaute dans s
 ul#chapitre li a:hover,
 ul#chapitre li a:focus{
     background: rgba(255,255,255,.2);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
+/*    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
                 0 -1px 0 hsl(210, 100%, 42%) inset,
                 0 -2px 0 hsl(210, 100%, 48%) inset,
                 0 -3px 0 hsl(210, 100%, 54%) inset,
@@ -129,10 +111,9 @@ ul#chapitre li a:focus{
     padding: 8px 25px 17px 25px;
     color:black;
     font-weight: bold;
-
 }
 ul#chapitre li a:active{
-    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
+    /*background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1)); */
     box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
 }
 /*ajout d'une lumière */
@@ -274,7 +255,7 @@ progress{
 /*mise en forme du footer */
 #footer a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 #footer a:hover{
   color: blue
@@ -286,15 +267,10 @@ progress{
   font-size: 20px;
   color:black;
   font-weight: bold;
+  color: white;
 }
 #footer{
-  background: linear-gradient(deepskyblue, dodgerblue);
-  /*Compatibilité du dégradé*/
-  background: -webkit-linear-gradient(deepskyblue, dodgerblue);
-  background:    -moz-linear-gradient(deepskyblue, dodgerblue);
-  background:     -ms-linear-gradient(deepskyblue, dodgerblue);
-  background:      -o-linear-gradient(deepskyblue, dodgerblue);
-  background:         linear-gradient(deepskyblue, dodgerblue);
+  background: linear-gradient(black, white);
   position: fixed;
   bottom: 0;
   right: 0;
@@ -322,9 +298,10 @@ progress{
 #menu{
     display:flex;
       margin: 0;
-      background: deepskyblue;
+      background: linear-gradient(black, white);
       height: 40px;
       width: 100%;
+      color:white;
     }
     li#menu{
       width: 100%;
@@ -357,21 +334,22 @@ progress{
     progress{
       margin: 1%;
     }
-    ul#chapitre li a{ /*vérifié */
-     background: deepskyblue;
+    ul#chapitre li a{
+    /*  background: deepskyblue; */
+    background: linear-gradient(black, white);
       padding: 0;
       height: 30px;
       padding-top: 5px;
       font-size: 15px;
       color: black;
       box-shadow: none;
-      border-top: 1px solid dodgerblue;
+      border-top: 1px solid black;
       width: 100%;
     }
     ul#chapitre li a:hover,
     ul#chapitre li a:focus{
-      background: dodgerblue; /*vérifié */
-       box-shadow: none;
+  /*    background: dodgerblue; /*vérifié */
+      background: linear-gradient(black, white);  /*box-shadow: none; */
         padding: 0;
         height: 30px;
         padding-top: 5px;
