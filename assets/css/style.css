@@ -55,6 +55,7 @@ body{
 /* mise en forme du titre de la page */
 #entete h1{
   color: white;
+  transform: translateY(100%);
 }
 /*mise en forme de la baniere menu */
 #nav{
@@ -180,7 +181,8 @@ h2, h3, h4{
 /*code CSS qui permet de cacher les informations contenu dans l'image */
 .info {
    display:none;
-   width: 60%;
+   width: 100%;
+   text-align: center;
 }
 #afficherathle:target .info, #afficherhand:target .info, #afficherpompier:target .info{
    display:block;
