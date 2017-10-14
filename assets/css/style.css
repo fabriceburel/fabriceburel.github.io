@@ -163,7 +163,7 @@ h2, h3, h4{
 }
 #Hobbies{
     padding-bottom: 200px;
-    min-height: 400px;
+    /*min-height: 400px;*/
     background-color: #E0DFE7;
     opacity: 0.88;
     width: 100%;
@@ -224,7 +224,7 @@ figcaption{
 }
 #afficherathle, #afficherhand, #afficherpompier, #masquerathle, #masquerhand, #masquerpompier{
   min-height: 400px;
-  min-width: 400px;
+/*  min-width: 400px; */
 
 }
 #afficherathle, #afficherhand, #afficherpompier{
@@ -284,13 +284,16 @@ progress{
 }
 
 /*ajout d'un media queries spécifique au télphone*/
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 900px)
 {
   .col-sm{
     text-align: center;
   }
   #footer{
     position: relative;
+  }
+  #footer p{
+    margin: 0;
   }
   #Hobbies{
     padding-bottom: 10px;
@@ -368,7 +371,7 @@ progress{
      list-style : none; /* on supprime le style par défaut de la liste */
    line-height : 20px; /* on définit une hauteur pour chaque élément */
    text-align : center; /* on centre le texte qui se trouve dans la liste */
-     width: 30%; /* définit la largeure d'affichage du menu */
+    /* width: 30%; /* définit la largeure d'affichage du menu */
        background: yellow;
       }
     #nav /* Ensemble du menu */
