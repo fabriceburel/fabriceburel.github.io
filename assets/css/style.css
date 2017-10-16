@@ -297,7 +297,6 @@ h1,h2,h3,h4,h5,p,progress{
 p .couleurblanche{
   color: white;
 }
-
 /*ajout d'un media queries spécifique au télphone*/
 @media all and (max-device-width: 900px)
 {
