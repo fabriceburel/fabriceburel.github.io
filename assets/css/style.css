@@ -5,16 +5,6 @@ html{
 ul, li{
   margin: 0;
 }
-/*
-.row h1{
-  display: flex;
-  flex-direction: row;
-}
-.row h1 > [class^="col-"],
-.row h1> [class*=" col-"] {
-  display: flex;
-  align-items: center;
-}*/
 p, ul{
   padding: 5px;
 }
@@ -29,8 +19,8 @@ body{
   background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: 0;
-  background-size: 50%;
-  background-position: center;
+  background-size: 40%;
+  background-position:top;
 }
 /*mise en forme de l'entete: image de profil, image du header, Titre de la page */
 #entete{
@@ -42,10 +32,6 @@ body{
 .container-fluid img{
   padding: 0;
 }
-/*permet de supprimer la ligne menu pour un affichage normal */
-#menu{
-  display: none;
-}
 /* mise en forme de la photo de l'entete */
 #profil{
   width: 100%;
@@ -55,28 +41,60 @@ body{
 /* mise en forme du titre de la page */
 #entete h1{
   color: white;
-  transform: translateY(100%);
+  margin-top:6%;
 }
 /*mise en forme de la baniere menu */
+nav.navbar.navbar-inverse{
+  margin: 0;
+  padding: 0;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+    background: linear-gradient(black, #E0DFE7);
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: white;
+    background: linear-gradient(black, #E0DFE7);
+}
+li.active{
+  width: 25%;
+  height: 100%;
+}
 #nav{
   /*suppression des marges */
   padding: 0;
   margin: 0;
+  width: 100%;
+  display: block;
 }
-
-ul#chapitre{
+div#navbar.collapse.navbar-collapse{
+  width: 100%;
+  margin:0;
+  padding: 0;
+}
+.collapsing{
+  margin: 0;
+  padding: 0;
+}
+div.navbar-header{
+  background: linear-gradient(black, #E0DFE7);
+}
+.navbar{
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  z-index: 1000;
+}
+#chapitre{
   /*mise en forme du menu sous forme horizontal*/
-    display: table;
-    width: 100%;
-    margin:0;
-    padding: 0;
-    background: linear-gradient(black, #E0DFE7);
+  display: table;
+  width: 100%;
+  margin:0;
+  padding: 0;
+  background: linear-gradient(black, #E0DFE7);
     /*Ajout de coins arrondis et d’ombres*/
-    border-radius: 3px;
 }
-ul#chapitre li{
-  /*Un menu horizontal*/
-    display: table-cell;
+div#nav.container{
+  height: 30px;
 }
 ul#chapitre li a{
     /*Style des liens*/
@@ -103,18 +121,9 @@ Pour améliorer l’expérience utilisateur et ainsi aider l’internaute dans s
 ul#chapitre li a:hover,
 ul#chapitre li a:focus{
     background: rgba(255,255,255,.2);
-/*    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
-                0 -1px 0 hsl(210, 100%, 42%) inset,
-                0 -2px 0 hsl(210, 100%, 48%) inset,
-                0 -3px 0 hsl(210, 100%, 54%) inset,
-                0 -4px 0 hsl(210, 100%, 60%) inset,
-                0 -5px 0 hsl(210, 100%, 70%) inset;
-                /*modification des marges interne */
-    padding: 8px 25px 17px 25px;
     font-weight: bold;
 }
 ul#chapitre li a:active{
-    /*background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1)); */
     box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
 }
 /*ajout d'une lumière */
@@ -236,7 +245,6 @@ figcaption{
 h1,h2,h3,h4,h5,p,progress{
   margin: 0;
 }
-/*modification des progess bar code trouver sur le site http://bootstrapdesigntools.com/tools/bootstrap-progress-bar-designer/*/
 .progress-bar{
   width: 100px;
   height: 20px;
@@ -261,7 +269,6 @@ h1,h2,h3,h4,h5,p,progress{
 .Competences p{
   text-align:center;
 }
-
 /*mise en forme du footer */
 #footer a{
   text-decoration: none;
@@ -279,7 +286,7 @@ h1,h2,h3,h4,h5,p,progress{
   font-weight: bold;
 }
 #footer{
-  background: linear-gradient(black, white);
+  background: linear-gradient(black, #E0DFE7);
   position: fixed;
   bottom: 0;
   right: 0;
@@ -298,7 +305,7 @@ p .couleurblanche{
   color: white;
 }
 /*ajout d'un media queries spécifique au télphone*/
-@media all and (max-device-width: 900px)
+@media all and (max-device-width: 766px)
 {
   .col-sm{
     text-align: center;
@@ -312,16 +319,21 @@ p .couleurblanche{
   #Hobbies{
     padding-bottom: 10px;
   }
-#menu{
-    display:flex;
+  #menu{
       margin: 0;
-      background: linear-gradient(black, white);
+      background: linear-gradient(black, #E0DFE7);
       height: 40px;
-      width: 100%;
+      width: 60%;
       color:white;
+    }
+    div#nav.container{
+      height: 50px;
     }
     li#menu{
       width: 100%;
+    }
+    .nav.navbar-nav{
+      width: 60%;
     }
     #entete h1{
       width: 100%;
@@ -344,6 +356,7 @@ p .couleurblanche{
     }
      #image{
       width: 50%;
+      min-height: 100px;
       align-items: center;
       justify-content: center;
       margin: 0;
@@ -352,8 +365,6 @@ p .couleurblanche{
       margin: 1%;
     }
     ul#chapitre li a{
-    /*  background: deepskyblue; */
-    background: linear-gradient(black, white);
       padding: 0;
       height: 30px;
       padding-top: 5px;
@@ -362,54 +373,39 @@ p .couleurblanche{
       box-shadow: none;
       border-top: 1px solid black;
       width: 100%;
+      color: white;
     }
     ul#chapitre li a:hover,
     ul#chapitre li a:focus{
-  /*    background: dodgerblue; /*vérifié */
-      background: linear-gradient(black, white);  /*box-shadow: none; */
+        background: linear-gradient(black, white);
         padding: 0;
+        margin: 0;
         height: 30px;
         padding-top: 5px;
         color: black;
-        width: 100%; /*ne change rien */
-
      }
-    ul#chapitre li a:focus::before{ /*vérifié */
-          box-shadow: none;
-          width: 100%;
-        }
     #nav, #nav ul /* Liste */
    {
-        padding : 0; /* pas de marge intérieure */
-        margin : 0; /* ni extérieure */
+     padding : 0; /* pas de marge intérieure */
+     margin : 0; /* ni extérieure */
      list-style : none; /* on supprime le style par défaut de la liste */
-   line-height : 20px; /* on définit une hauteur pour chaque élément */
-   text-align : center; /* on centre le texte qui se trouve dans la liste */
-    /* width: 30%; /* définit la largeure d'affichage du menu */
-       background: yellow;
+     text-align : center; /* on centre le texte qui se trouve dans la liste */
+     background: linear-gradient(black, #E0DFE7);
       }
     #nav /* Ensemble du menu */
       {
        font-weight : bold; /* on met le texte en gras */
-   font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
-    font-size : 12px; /* hauteur du texte : 12 pixels */
-     width: 100%;
+       font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+       font-size : 12px; /* hauteur du texte : 12 pixels */
        height: 30px;
       }
-
+      nav.navbar.navbar-inverse{
+        width: 50%;
+      }
       #nav li
       {
-      float: left;
-      height: 30px;
       width: 100%; /*définit la taille de tout les li */
      }
-
-      #nav li ul
-      {
-        position: absolute;
-      	left: -999em;
-        z-index: 1;
-      }
       #nav li:hover ul {
     	   left: auto;
          height: 30px;
@@ -418,18 +414,25 @@ p .couleurblanche{
 	       left: auto;
          height: 30px;
        }
-
-      ul#nav h5{
-         margin: 0;
-         font-size: 20px;
-         font-weight: bold;
-         vertical-align: middle;
-         height: 30px;
-         text-align: center;
+       nav.navbar.navbar-inverse{
+         background: linear-gradient(black, #E0DFE7);
+         border: none;
+       }
+       #nav button{
+        background: linear-gradient(black, #E0DFE7);
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: middle;
+        height: 30px;
+        text-align: center;
+       }
+       button span{
+         background: linear-gradient(black, #E0DFE7);
        }
        /*enleve la lumière */
    ul#chapitre li a::before{
            display: none;
+           width: 60%;
        }
        i{
          margin-right: 10px;
@@ -438,6 +441,18 @@ p .couleurblanche{
        #content{
          background-size: 100%;
        }
+}
+@media screen and (max-width: 475px) {
+  #entete h1{
+    color: white;
+    padding-top:2%;
+  }
+}
+@media screen and (min-width: 475px) and (max-width: 770px) {
+  #entete h1{
+    color: white;
+    margin-top:10%;
+  }
 }
 /*mise en forme de la progress bar google chrome */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
