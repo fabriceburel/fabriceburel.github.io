@@ -268,7 +268,7 @@ h1,h2,h3,h4,h5,p,progress{
   color: white;
 }
 #footer a:hover{
-  color: blue
+  color: black;
 }
 #footer i{
   font-size: 30px;
