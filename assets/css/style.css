@@ -14,6 +14,10 @@ body{
 .image{
   padding:0;
 }
+.glyphicon.glyphicon-education{
+  font-size: 80px;
+  font-weight: bold;
+}
 #content{
   background-image: url(../img/triskel.png);
   background-attachment: fixed;
@@ -172,13 +176,16 @@ h2, h3, h4{
   font-weight: bold;
 }
 #Hobbies{
-    padding-bottom: 200px;
+    padding-bottom: 400px;
     /*min-height: 400px;*/
     background-color: #E0DFE7;
     opacity: 0.88;
     width: 100%;
     text-align: center;
     font-weight: bold;
+}
+.imageHobbie{
+  height: 20vh;
 }
 .date{
   color:Blue;
@@ -189,23 +196,11 @@ h2, h3, h4{
 }
 /*code CSS qui permet de cacher les informations contenu dans l'image */
 .info {
-   display:none;
+   /*display:none; */
    width: 100%;
    text-align: center;
 }
-#afficherathle:target .info, #afficherhand:target .info, #afficherpompier:target .info{
-   display:block;
-   text-align: center;
-}
-.masquer{
-   display:none;
-}
-#afficherathle:target .masquer, #afficherhand:target .masquer, #afficherpompier:target .masquer{
-   display:inline;
-}
-#afficherathle:target .afficher,  #afficherhand:target .afficher,  #afficherpompier:target .afficher {
-   display:none;
-}
+
 /* Mis en forme de la partie Hobbies */
 #pompier, #athle, #hand{
   width: 100%;
@@ -219,7 +214,7 @@ h2, h3, h4{
   opacity: 0.7;
 }
 #Hobbies img{
-  border-radius: 100px;
+  border-radius: 200px;
   border: 1px solid black;
 }
 figure{
@@ -233,16 +228,15 @@ figcaption{
   font-weight: bold;
   text-decoration: underline;
 }
-#afficherathle, #afficherhand, #afficherpompier, #masquerathle, #masquerhand, #masquerpompier{
-  min-height: 400px;
-/*  min-width: 400px; */
-
-}
-#afficherathle, #afficherhand, #afficherpompier{
+div.loisir{
   border: 1px solid black;
 }
+
 /*permet de supprimer l'espace entre 2 div */
 h1,h2,h3,h4,h5,p,progress{
+  margin: 0;
+}
+.rowProgress{
   margin: 0;
 }
 .progress-bar{
