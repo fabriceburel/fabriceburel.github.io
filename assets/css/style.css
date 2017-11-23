@@ -202,9 +202,6 @@ h2, h3, h4{
 }
 
 /* Mis en forme de la partie Hobbies */
-#pompier, #athle, #hand{
-  width: 100%;
-}
 #Hobbies a{
   text-decoration: none;
   color: black;
@@ -216,6 +213,7 @@ h2, h3, h4{
 #Hobbies img{
   border-radius: 200px;
   border: 1px solid black;
+  z-index: 9999;
 }
 figure{
   text-align: center;
